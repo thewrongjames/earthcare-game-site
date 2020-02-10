@@ -1,0 +1,80 @@
+:root {
+  --color-one: #2B7BBA; /* Blue */
+  --color-two: #FEFEFE; /* White */
+  --color-three: #596; /* Green */
+  --color-four: #2B4340; /* Black */
+  --color-five: #D1D2D2; /* Light Grey */
+  --color-six: #999A9A; /* Dark Grey */
+
+  --primary-background-colour: #2EAF7D; /* Green */
+  --secondary-background-colour: #2B7BBA; /* Blue */
+  --text-colour: #FEFEFE; /* White */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--text-colour);
+  background-color: var(--primary-background-colour);
+  font-size: 1.1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+a {
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+section > div, footer > div {
+  width: 70%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.main-image {
+  margin: auto;
+  display: block;
+  max-height: 50vh;
+  max-width: 50vh;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.secondary-background-colour {
+  background-color: var(--secondary-background-colour)
+}
+
+section {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+h1, footer {
+  text-align: center;
+}
+
+footer {
+  padding: 1rem;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 800px) {
+  section > div, footer > div {
+    width: 100%;
+    padding: 20px;
+  }
+}
