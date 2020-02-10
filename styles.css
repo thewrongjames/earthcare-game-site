@@ -41,13 +41,13 @@ section > div, footer > div {
   margin: auto;
 }
 
-.main-image {
-  margin: auto;
-  display: block;
+.main-image-container {
+  text-align: center;
+}
+
+.main-image-container > img {
   max-height: 50vh;
   max-width: 50vh;
-  min-height: 200px;
-  min-width: 200px;
 }
 
 .content {
